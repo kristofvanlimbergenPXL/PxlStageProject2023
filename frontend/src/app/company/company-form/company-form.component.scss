@@ -1,0 +1,15 @@
+form{
+  width: 25rem;
+}
+
+.btn-primary:disabled{
+  background-color: #e3e3e3 !important;
+}
+
+.btn-light,
+.btn-light:hover{
+  background-color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,19 @@
+$pxl_black: #030203;
+$white: #fff;
+$pxl_green: #58a518;
+$pxl_green_40: rgb(88, 165, 24, 0.4);
+$hover_grey: #f4f4f4;
+
+.mat-icon{
+  vertical-align: text-top !important;
+}
+
+.btn-light{
+  background-color: #fff;
+  color: $pxl_black;
+}
+
+.btn-light:hover{
+  background-color: $hover_grey;
+  border: 1px solid $hover_grey;
+}

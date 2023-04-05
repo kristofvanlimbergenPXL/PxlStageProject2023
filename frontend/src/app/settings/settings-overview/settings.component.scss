@@ -1,0 +1,62 @@
+.dataTitle {
+  font-weight: 500;
+}
+
+select {
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+
+input {
+  width: 24rem;
+  height: 2rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+button {
+  width: fit-content;
+  padding: 0.25rem 1.25rem;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #c6c6c6;
+  background-color: #fefefe;
+  color: #c6c6c6;
+}
+
+.link {
+  margin-left: 2rem;;
+}
+
+.linktxt {
+  display: inline-block;
+  width: 630px;
+}
+
+.disable-background {
+  background: #bababa50;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.linkicon{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h2 mat-dialog-title class="my-2">Update</h2>
+  <button class="btn btn-sm btn-light m-0" (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="overflow-hidden pb-2 mt-2">
+  <form [formGroup]="companyForm" class="d-flex flex-column">
+    <mat-form-field>
+      <input matInput placeholder="Titel" formControlName="title" />
+      <mat-error *ngIf="checkError('title', 'required')">Titel is een verplicht veld!</mat-error>
+      <mat-error *ngIf="checkError('title', 'maxlength')">Titel mag slechts 50 karakters bevatten!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Familienaam" formControlName="lastName" />
+      <mat-error *ngIf="checkError('lastName', 'required')">Familienaam is een verplicht veld!</mat-error>
+      <mat-error *ngIf="checkError('lastName', 'maxlength')">Familienaam mag slechts 50 karakters bevatten!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Voornaam" formControlName="firstName" />
+      <mat-error *ngIf="checkError('firstName', 'required')">Voornaam is een verplicht veld!</mat-error>
+      <mat-error *ngIf="checkError('firstName', 'maxlength')">Voornaam mag slechts 50 karakters bevatten!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Telefoonnummer" formControlName="phoneNumber"/>
+      <mat-error *ngIf="checkError('phoneNumber', 'required')">Telefoonnummer is een verplicht veld!</mat-error>
+      <mat-error *ngIf="checkError('phoneNumber', 'maxlength')">Telefoonnummer mag slechts 30 karakters bevatten!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email" />
+      <mat-error *ngIf="checkError('email', 'required')">Email is een verplicht veld!</mat-error>
+      <mat-error *ngIf="checkError('email', 'email')">Ongeldig email formaat!</mat-error>
+      <mat-error *ngIf="checkError('email', 'maxlength')">Email mag slechts 70 karakters bevatten!</mat-error>
+    </mat-form-field>
+
+    <div mat-dialog-actions class="d-flex justify-content-end gap-2 pt-4">
+      <button
+        mat-raised-button
+        class="btn btn-sm btn-primary"
+        [disabled]="companyForm.invalid"
+        (click)="onSubmit()"
+      >
+        Updaten
+      </button>
+    </div>
+  </form>
+</div>

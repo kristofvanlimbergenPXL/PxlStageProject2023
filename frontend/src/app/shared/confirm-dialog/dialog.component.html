@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>
+  {{ title }}
+</h1>
+
+<div mat-dialog-content>
+  <div [innerHtml]="question" class="mb-3"></div>
+</div>
+
+<div mat-dialog-actions class="d-flex justify-content-end">
+  <button
+    mat-raised-button
+    mat-dialog-close
+    class="btn btn-sm btn-light"
+    (click)="close(false)"
+    tabindex="-1"
+  >
+    Neen
+  </button>
+  <button
+    mat-raised-button
+    class="btn btn-sm btn-primary"
+    (click)="close(true)"
+    tabindex="1"
+  >
+    Ja
+  </button>
+</div>

@@ -1,0 +1,38 @@
+.mat-raised-button {
+  padding: 0 !important;
+  margin: 0.25rem !important;
+  min-width: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+tr:hover {
+  cursor: pointer;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.disable-background {
+  background: #bababa50;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

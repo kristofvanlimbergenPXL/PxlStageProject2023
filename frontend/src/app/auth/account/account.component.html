@@ -1,0 +1,36 @@
+<div class="dropdown" *ngIf="googleUser != undefined || googleUser != null">
+  <button #accountDropdown class="dropbtn">
+    <img src="{{ googleUser.picture }}" class="userIcon" alt="User icon" />
+  </button>
+  <div id="accountDropdown" class="dropdown-content">
+    <div class="d-flex flex-row userDropdownHeader">
+      <img
+        src="{{ googleUser.picture }}"
+        class="userIconLarge"
+        alt="User icon"
+      />
+      <div>
+        <p class="nameDropdown">{{ googleUser.name }}</p>
+        <p>{{ googleUser.email }}</p>
+      </div>
+    </div>
+    <div class="dropdownLinks">
+      <a [routerLink]="['/settings']" class="settingsSelector">
+        <mat-icon mat-list-icon class="settingsIcon">settings</mat-icon>
+        Instellingen</a
+      >
+    </div>
+    <button class="logoutButton" (click)="logout()">Log uit</button>
+  </div>
+</div>
+
+<div *ngIf="googleUser === null || googleUser === undefined">
+  <mat-nav-list #navList>
+    <ng-container>
+      <mat-list-item *ngIf="navItem" (click)="onLoginClick()" class="nav-item">
+        <mat-icon mat-list-icon>{{ navItem.icon }}</mat-icon>
+        <span>{{ navItem.title }}</span>
+      </mat-list-item>
+    </ng-container>
+  </mat-nav-list>
+</div>

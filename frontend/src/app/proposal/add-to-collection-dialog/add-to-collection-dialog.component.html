@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>Voeg een {{ typeOfPerson }} toe</h1>
+<div mat-dialog-content>
+  <div class="mb-3">
+    <mat-form-field class="w-100">
+      <mat-label>Kies een {{ typeOfPerson }}</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="Kies een persoon"
+        [formControl]="selectedPerson"
+        [matAutocomplete]="auto"
+      />
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayPerson">
+        <mat-option
+          *ngFor="let person of filteredPersons | async"
+          [value]="person"
+        >
+          {{ person.firstName }} {{ person.lastName }}
+        </mat-option>
+      </mat-autocomplete>
+      <!-- <mat-select [formControl]="selectedPerson">
+        <mat-option *ngFor="let person of persons" [value]="person">
+          {{ person.firstName }} {{ person.lastName }}
+        </mat-option>
+      </mat-select> -->
+    </mat-form-field>
+  </div>
+</div>
+
+<div mat-dialog-actions class="d-flex justify-content-end">
+  <button
+    mat-raised-button
+    mat-dialog-close
+    class="btn btn-sm btn-light"
+    (click)="close(false)"
+    tabindex="-1"
+  >
+    Annuleren
+  </button>
+  <button
+    mat-raised-button
+    class="btn btn-sm btn-primary"
+    tabindex="1"
+    [disabled]="!selectedPerson.valid"
+    (click)="close(true)"
+  >
+    Ok
+  </button>
+</div>

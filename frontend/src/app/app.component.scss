@@ -1,0 +1,68 @@
+.header {
+  background: #666;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 900;
+}
+
+.main {
+  display: flex;
+  padding-top: 64px;
+}
+
+.nav-container {
+  float: left;
+  min-width: 64px;
+  width: 64px;
+  &.expanded {
+    min-width: 180px;
+  }
+}
+
+.menu {
+  background: #666;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  min-width: inherit;
+  z-index: 800;
+}
+
+.content {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+tr:hover {
+  cursor: pointer;
+}
+
+.headers:hover {
+  cursor: auto
+}
+
+.disable-background {
+  background: #bababa40;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Verstuur een Email naar de bedrijfspromotor</h1>
+<div mat-dialog-content>
+  <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="w-100">
+      <input type="text" matInput formControlName="title" placeholder="titel" />
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+      <textarea
+        matInput
+        formControlName="content"
+        placeholder="inhoud"
+      ></textarea>
+    </mat-form-field>
+
+    <mat-checkbox color="primary" formControlName="sendAttachment"
+      >Stagevoorstel als bijlage meesturen?</mat-checkbox
+    >
+
+    <div class="d-flex justify-content-end">
+      <button
+        mat-raised-button
+        mat-dialog-close
+        class="btn btn-sm btn-light"
+        (click)="onCancelClick()"
+        tabindex="-1"
+      >
+        Annuleren
+      </button>
+      <button
+        mat-raised-button
+        class="btn btn-sm btn-primary"
+        type="submit"
+        tabindex="1"
+      >
+        Versturen
+      </button>
+    </div>
+  </form>
+</div>

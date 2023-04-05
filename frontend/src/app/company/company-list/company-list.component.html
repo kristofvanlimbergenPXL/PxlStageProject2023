@@ -1,0 +1,163 @@
+<div class="pt-4 px-4 pb-2 mt-4 mx-4">
+  <div class="d-flex justify-content-between mb-2">
+    <mat-form-field class="float-left w-25 ms-4">
+      <input matInput (keyup)="applyFilter($event)" placeholder="Filter op bedrijfsnaam" #input />
+    </mat-form-field>
+  </div>
+
+  <!--Expanded table-->
+  <table mat-table [dataSource]="datasource" matSort multiTemplateDataRows class="mat-elevation-z8 shadow-sm">
+    <ng-container matColumnDef="naam">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="name">Naam</th>
+      <td mat-cell *matCellDef="let company">{{ company.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="adres">
+      <th mat-header-cell *matHeaderCellDef>Adres</th>
+      <td mat-cell *matCellDef="let company">
+        {{ company.companyAddress.streetAndNumber }}&nbsp;&nbsp;{{
+        company.companyAddress.zipCode
+        }}-{{ company.companyAddress.city }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="contact">
+      <th mat-header-cell *matHeaderCellDef>Contactpersonen</th>
+      <td mat-cell *matCellDef="let company">
+        <ng-container>{{ company.companyContacts?.length }}</ng-container>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="promotor">
+      <th mat-header-cell *matHeaderCellDef>Promotoren</th>
+      <td mat-cell *matCellDef="let company">
+        <ng-container>{{ company.companyPromotors?.length }}</ng-container>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="expand">
+      <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+      <td mat-cell *matCellDef="let element" class="d-flex justify-content-end">
+        <button mat-raised-button class="btn btn-sm btn-light shadow-none bg-transparent my-1" aria-label="expand row"
+          (click)="onCLick(element)">
+          <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+          <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" class="expanded">
+        <div class="element-detail d-flex flex-column gap-1" [@detailExpand]="
+            element == expandedElement ? 'expanded' : 'collapsed'
+          ">
+          <mat-card-header>
+            <mat-card-title>Contactpersonen</mat-card-title>
+          </mat-card-header>
+          <mat-card>
+            <mat-card-content>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Titel</th>
+                    <th>Naam</th>
+                    <th>Telefoonnummer</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tr *ngFor="let person of editedCompany?.companyContacts">
+                  <td>{{ person.title }}</td>
+                  <td>{{ person.firstName }}&nbsp;{{ person.lastName }}</td>
+                  <td>{{ person.phoneNumber }}</td>
+                  <td>{{ person.email }}</td>
+                  <td class="d-flex justify-content-end">
+                    <button mat-raised-button class="btn btn-sm btn-light pt-1 shadow-none"
+                      (click)="onEditContact(person)">
+                      <mat-icon class="fs-6">edit</mat-icon>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </mat-card-content>
+          </mat-card>
+          <mat-card-header>
+            <mat-card-title>Promotoren</mat-card-title>
+          </mat-card-header>
+          <mat-card>
+            <mat-card-content>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Titel</th>
+                    <th>Naam</th>
+                    <th>Telefoonnummer</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tr *ngFor="let person of editedCompany?.companyPromotors">
+                  <td>{{ person.title }}</td>
+                  <td>{{ person.firstName }}&nbsp;{{ person.lastName }}</td>
+                  <td>{{ person.phoneNumber }}</td>
+                  <td>{{ person.email }}</td>
+                  <td class="d-flex justify-content-end">
+                    <button mat-raised-button class="btn btn-sm btn-light pt-1 shadow-none"
+                      (click)="onEditPromotor(person)">
+                      <mat-icon class="fs-6">edit</mat-icon>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </mat-card-content>
+          </mat-card>
+
+          <mat-card-header>
+            <mat-card-title>Stagevoorstellen</mat-card-title>
+          </mat-card-header>
+          <mat-card class="mb-5">
+            <mat-card-content>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Titel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of editedCompany?.proposals">
+                    <td>{{ item.title }}</td>
+                    <td class="d-flex justify-content-end">
+                      <button (click)="onNavigate(item)" mat-raised-button
+                        class="btn btn-sm btn-light pt-1 shadow-none">
+                        <mat-icon class="fs-6">navigate_next</mat-icon>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand" class="headers"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="element-row"
+      [class.example-expanded-row]="expandedElement === element" [ngClass]="{ highlight: expandedElement === element }">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+
+    <ng-container *matNoDataRow>
+      <td class="mat-cell" [attr.colspan]="columnsToDisplayWithExpand.length">
+        <figure class="d-flex flex-column justify-content-center align-items-center mb-5 overflow-hidden nodata">
+          <img
+            src="https://cdn.dribbble.com/users/1753953/screenshots/3818675/media/f59ed80d5c527e2461d8ba49adc36160.gif">
+          <figcaption>Helaas, er werd geen data gevonden.</figcaption>
+        </figure>
+      </td>
+    </ng-container>
+  </table>
+
+  <mat-paginator #paginator [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons
+    aria-label="Select page of company elements">
+  </mat-paginator>
+
+</div>

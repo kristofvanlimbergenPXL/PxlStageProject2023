@@ -1,0 +1,79 @@
+// TODO check for duplicate scss styling
+
+table{
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.mat-card-header{
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+
+th{
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+hr{
+  border: solid #dddddd66 0.1rem;
+}
+
+.expanded{
+  background-color: #f9f9f9;
+}
+
+thead tr:hover{
+  background-color: #fff;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-detail {
+  overflow: hidden;
+  display: flex;
+}
+.mat-mdc-form-field {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.highlight{
+  background: #f3f3f3;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+
+.mat-column-contact {
+  width:10%;
+  text-align: center;
+}
+.mat-column-promotor {
+  width:10%;
+  text-align: center;
+}
+.mat-column-naam {
+  width:30%;
+
+}
+
+.mat-column-adres{
+  width:35%;
+}
+
+
+
+

@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h2 mat-dialog-title class="my-2">{{ title }}</h2>
+  <button class="btn btn-sm btn-light m-0" (click)="close({ result: false })">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="overflow-hidden pb-2 mt-2">
+  <form [formGroup]="reviewerForm" (ngSubmit)="onSubmit()" class="d-flex flex-column">
+    <mat-form-field>
+      <input matInput placeholder="Familienaam" formControlName="lastname" />
+      <mat-error *ngIf="checkError('lastname', 'required')">{{ lastname_req }}</mat-error>
+      <mat-error *ngIf="checkError('lastname', 'maxlength')">{{ lastname_to_long }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Voornaam" formControlName="firstname" />
+      <mat-error *ngIf="checkError('firstname', 'required')">{{ firstname_req }}</mat-error>
+      <mat-error *ngIf="checkError('firstname', 'maxlength')">{{ firstname_to_long }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email" />
+      <mat-error *ngIf="checkError('email', 'required')">{{ email_req }}</mat-error>
+      <mat-error *ngIf="checkError('email', 'email')">{{ email_invalid }}</mat-error>
+      <mat-error *ngIf="checkError('email', 'maxlength')">{{ email_to_long }}</mat-error>
+    </mat-form-field>
+
+    <div mat-dialog-actions class="d-flex justify-content-end gap-2 pt-4">
+      <button mat-raised-button class="btn btn-sm btn-primary" type="submit" [disabled]="!reviewerForm.valid">
+        {{ buttonText }}
+      </button>
+    </div>
+  </form>
+</div>
