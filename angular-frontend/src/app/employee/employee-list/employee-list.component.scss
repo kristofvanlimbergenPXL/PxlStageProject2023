@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+strong{
+  font-weight: 600;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-column-firstName {
+  width:30%;
+}
+.mat-column-lastName {
+  width:30%;
+
+}
+.mat-column-email {
+  width:30%;
+
+}
+
+

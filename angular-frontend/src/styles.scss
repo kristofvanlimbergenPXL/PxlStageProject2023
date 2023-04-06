@@ -1,0 +1,318 @@
+/* You can add global styles to this file, and also import other style files */
+
+$pxl_black: #030203;
+$white: #fff;
+$pxl_green: #58a518;
+$pxl_green_40: rgb(88, 165, 24, 0.4);
+$hover_grey: #f4f4f4;
+
+// officiele documenten
+//$official-docs-font: 'calibri';
+
+// Website en digitale communicatie
+$digital-coms-web-font: Arial;
+
+/* Importing Bootstrap SCSS file. */
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "ngx-toastr/toastr";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: $digital-coms-web-font, "Helvetica Neue", sans-serif;
+}
+
+// Account ---------------------------------------------------------------------------------
+.userIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 60px;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexMid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropbtn {
+  background-color: #f5f5f5;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  height: 64px;
+  border: none;
+  cursor: pointer;
+}
+
+.userIcon:hover,
+.userIcon:focus,
+.userIcon:active {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 64px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  right: 12px;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #dddddd66;
+}
+
+.show {
+  display: block;
+}
+
+.accountPage {
+  margin-top: 20px;
+}
+
+.userIconLarge {
+  height: 60px;
+  width: 60px;
+  border-radius: 80px;
+}
+
+.userDropdownHeader {
+  font-weight: 400;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.userDropdownHeader p {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.nameDropdown {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdownLinks {
+  margin-top: 1px;
+  background: white;
+  border-radius: 4px;
+}
+
+.logoutButton {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fefefe;
+  color: 030203;
+  border: 1px solid #030203;
+}
+
+.logoutButton:hover {
+  background: #dddddd66;
+  border: 1px solid #dddddd66;
+}
+
+.pageBlock {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.pageContent {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.innerPageContent {
+  width: 100%;
+}
+
+.filler {
+  height: 50px;
+}
+
+.currentSheet {
+  width: 100%;
+}
+
+.sheetTag {
+  font-weight: 600;
+}
+
+.sheetTitle {
+  font-weight: 600;
+}
+
+.sheetSelector {
+  margin-left: 50px;
+}
+
+.buttonStyle {
+  border: none;
+  background-color: #ddd;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-weight: 500;
+}
+
+.settingsIcon {
+  color: #aaa;
+  margin-right: 10px;
+  margin-left: 0.4rem;
+  position: relative;
+  bottom: 3px;
+  vertical-align: middle;
+}
+
+.headers:hover {
+  background-color: $white;
+  cursor: auto;
+}
+
+tr:hover {
+  background-color: $hover_grey;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $pxl_green;
+  border: none;
+}
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn,
+.button-primary :disabled {
+  background-color: #dddddd66 !important;
+  color: $pxl_black;
+}
+
+
+.mat-fab {
+  background-color: $pxl_green_40;
+}
+
+.selectSheet {
+  margin-bottom: 20px;
+}
+
+.settingsSelector,
+.settingsSelector:hover {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-primary:hover,
+.btn-primary:active:focus {
+  background-color: $pxl_green_40;
+  border: none;
+  cursor: pointer;
+}
+
+.toast-success,
+.toast-error,
+.toast-warning {
+  background-color: $white !important;
+  border-radius: 0.5rem !important;
+  border: solid 0.01rem #dddddd66 !important;
+}
+
+.toast-success {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/390/390973.png");
+}
+
+.toast-error {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/753/753345.png");
+}
+
+.toast-warning {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1636/1636062.png");
+}
+
+.toast-title {
+  color: $pxl_black !important;
+  font-size: 1rem !important;
+}
+
+.toast-message {
+  color: $pxl_black !important;
+}
+
+::-webkit-scrollbar {
+  width: 1.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 0.5rem $hover_grey;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.25rem solid white;
+  background: #c7c7c7;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0.5rem grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+  box-shadow: inset 0 0 0.5rem darkslategrey;
+}
+
+.mat-header-cell {
+  font-weight: 500;
+}
+
+.nodata > img {
+  width: 18rem;
+}
+
+.internwise {
+  height: 6.5rem;
+}

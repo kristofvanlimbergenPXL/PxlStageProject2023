@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ad47a20-2d7f-4f49-909d-835471a8c577" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PxlStageProject2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PxlStageProject2023.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/PocApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/api/EmployeeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/api/EmployeeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/dataseeder/importData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/domain/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/exception/EmployeeNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/exception/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/mysql/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/rest/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/rest/advice/ApplicationExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/service/impl/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/java/com/example/poc/utils/DateFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/poc/src/test/java/com/example/poc/PocApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/account/account.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/account/account.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/account/account.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/account/account.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.state.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/login/login.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-form/company-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-form/company-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-form/company-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-form/company-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-list/company-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-list/company-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-list/company-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-list/company-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company-service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/company/company.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dash-board/dash-board.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dash-board/dash-board.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dash-board/dash-board.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee-list/employee-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee-list/employee-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee-list/employee-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee-list/employee-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/employee/employee.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/material/material.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/company.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/companyAddress .ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/companyContact.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/companyPromotor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/employee.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/googleFile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/googleSheet.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/googleUser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/nav-item.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/proposal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/reviewer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/student.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/models/studentCsv.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-menu/nav-menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-menu/nav-menu.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-menu/nav-menu.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-menu/nav-menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-menu/sync.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/status-to-color.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pipes/status-to-display-name.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/conversation-detail/conversation-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/conversation-detail/conversation-detail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/conversation-detail/conversation-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/conversation-detail/conversation-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-detail/proposal-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-detail/proposal-detail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-detail/proposal-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-detail/proposal-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-list/proposal-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-list/proposal-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-list/proposal-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal-list/proposal-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/proposal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-form/reviewer-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-form/reviewer-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-form/reviewer-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-form/reviewer-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-list/reviewer-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-list/reviewer-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-list/reviewer-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer-list/reviewer-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reviewers/reviewer.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/export.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/import.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings-overview/settings.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings-overview/settings.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings-overview/settings.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings-overview/settings.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings.actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/settings/settings.state.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/app.shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/confirm-dialog/dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/confirm-dialog/dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/confirm-dialog/dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/confirm-dialog/dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/data-share.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-form/student-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-form/student-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-form/student-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-form/student-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-list/student-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-list/student-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-list/student-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student-list/student-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/students/student.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Favicon_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Goedgekeurd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/InReview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Infeedback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/InternWise_horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/InternWise_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/afgekeurd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/angular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/bevestigd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/google-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/reviewOntvangen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/spring-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.spec.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2O45JSogcTa4Mtf9PBFMiSxEJUp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/krist/Desktop/Pxl/StageProject/PxlStageProject2023",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "28e202013b6f4ddb50d2565ac9017dcd",
+    "ts.external.directory.path": "C:\\Users\\krist\\Desktop\\Pxl\\StageProject\\PxlStageProject2023\\angular-frontend\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023\springboot-backend\src\main\java\com\example\springbootbackend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server (angular-frontend)">
+    <configuration name="Tests (internshiptool)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/angular-frontend/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/angular-frontend/node_modules/@angular/cli" />
+      <working-directory value="$PROJECT_DIR$/angular-frontend" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (angular-frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringbootBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootbackend.SpringbootBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server (angular-frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/angular-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ad47a20-2d7f-4f49-909d-835471a8c577" name="Changes" comment="" />
+      <created>1680806941414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680806941414</updated>
+      <workItem from="1680806942808" duration="375000" />
+      <workItem from="1680807410742" duration="15373000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
