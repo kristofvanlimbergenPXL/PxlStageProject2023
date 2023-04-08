@@ -4,6 +4,7 @@ import {EmployeeService} from "../employee.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Employee} from "../../models/employee";
 import {Student} from "../../models/student";
+import {ToastrService} from "ngx-toastr";
 
 
 @Component({
@@ -14,12 +15,14 @@ import {Student} from "../../models/student";
 export class EmployeeFormComponent implements OnInit {
 
   employeeForm!: FormGroup;
-  title: string = 'Nieuwe employee toevoegen';
+  title: string = '';
   employee!: Employee;
+  isVisible!: boolean;
   @Input() employeeFromParent!: Employee | null;
 
   constructor(private router: Router,
               private employeeService: EmployeeService,
+              private toastr: ToastrService
   ) {
   }
 
@@ -30,11 +33,15 @@ export class EmployeeFormComponent implements OnInit {
     if (this.employeeFromParent != null) {
       this.employee = this.employeeFromParent;
       this.setForm(this.employee);
+      this.isVisible=false;
+
       //console.log("from parent");
       //console.log(this.employeeFromParent);
 
     } else {
       this.employee = new Employee("", "", "", "");
+      this.title='Nieuwe employee toevoegen'
+      this.isVisible=true;
      // console.log("new employee");
     }
 
@@ -88,9 +95,11 @@ export class EmployeeFormComponent implements OnInit {
       this.employeeService.editEmployee(this.employee).subscribe((res) => {
         //console.log(this.employee);
         this.setForm(this.employee);
+        this.toastr.success("Gegevens succesvol opgeslagen.")
       })
     } else {
       this.employeeService.addEmployee(this.employee).subscribe((res) => {
+        this.toastr.success("Gegevens succesvol opgeslagen.")
         this.previous();
       });
     }

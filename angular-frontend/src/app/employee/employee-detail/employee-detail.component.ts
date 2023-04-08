@@ -6,6 +6,7 @@ import {MatTableDataSource} from "@angular/material/table";
 import {IConversationForProposal, Proposal, ProposalStatus} from "../../models/proposal";
 import {Employee} from "../../models/employee";
 import {ToastrService} from "ngx-toastr";
+import {Observable} from "rxjs/internal/Observable";
 
 @Component({
   selector: 'app-employee-detail',
@@ -16,7 +17,6 @@ export class EmployeeDetailComponent implements OnInit {
 
   employeeId!: number;
   employee!: Employee;
-
 
   constructor(private route: ActivatedRoute,
               private employeeService: EmployeeService,
@@ -29,6 +29,7 @@ export class EmployeeDetailComponent implements OnInit {
 
     this.employeeId =Number(this.route.snapshot.paramMap.get('id'));
     this.loadEmployee();
+
   }
 
   loadEmployee(): void {

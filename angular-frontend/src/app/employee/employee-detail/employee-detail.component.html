@@ -1,5 +1,4 @@
 <div class="pt-4 px-4 pb-2 mt-4 mx-4">
-  <h1>TODO layout + formulier voor update!!</h1>
   <div class="title row ms-2 me-4 my-2">
     <span class="col-1">
       <button
@@ -9,149 +8,25 @@
         >chevron_left</mat-icon>
       </button>
     </span>
-    <span class="col-4 my-auto">
+    <span class="col-8 my-auto mx-auto">
       {{employee.firstName}}&nbsp;{{employee.lastName}}
     </span>
   </div>
-
   <mat-tab-group class="tab-container ms-2 me-4">
-    <mat-tab label="Algemeen">
-
-      <app-employee-form [employeeFromParent]="employee">
-
-      </app-employee-form>
-
+    <mat-tab  label="Algemeen">
+      <app-employee-form [employeeFromParent]="employee"></app-employee-form>
     </mat-tab>
 
-    <!--<mat-tab label="Personen" [disabled]="proposal.status === 'Nieuw'">
+    <mat-tab label="Overeenkomst">
       <div class="cards-container">
-        <mat-card>
-          <mat-card-header>
-            <mat-icon mat-card-avatar>supervisor_account</mat-icon>
-            <mat-card-title>Promotor</mat-card-title>
-            <mat-card-subtitle
-            >Stagepromotor van {{ proposal.company.name }}</mat-card-subtitle
-            >
-          </mat-card-header>
-          <mat-card-content>
-            <span mat-line
-            >{{ proposal.companyPromotor.name }}&nbsp;&nbsp; - &nbsp;&nbsp;{{
-              proposal.companyPromotor.email
-              }}</span
-            >
-            <br />
-            <pre mat-line>{{ proposal.companyPromotor.title }}</pre>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-header>
-            <mat-icon mat-card-avatar>mail</mat-icon>
-            <mat-card-title>Contactpersoon</mat-card-title>
-            <mat-card-subtitle
-            >Contactpersoon van {{ proposal.company.name }}</mat-card-subtitle
-            >
-          </mat-card-header>
-          <mat-card-content>
-            <span mat-line
-            >{{ proposal.companyContact.name }}&nbsp;&nbsp; - &nbsp;&nbsp;
-              {{ proposal.companyContact.email }}</span
-            ><br />
-            <pre mat-line>{{ proposal.companyContact.title }}</pre>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card>
-          <mat-card-header>
-            <mat-icon mat-card-avatar>verified_user</mat-icon>
-            <mat-card-title>Reviewers</mat-card-title>
-            <mat-card-subtitle
-            >Lijst van reviewers gelinkt aan het
-              stagevoorstel</mat-card-subtitle
-            >
-            <div class="spacer"></div>
-            <button
-              mat-raised-button
-              class="btn btn-sm btn-outline-primary right-button"
-              aria-label="Add Reviewer"
-              (click)="onAddReviewerClick()"
-            >
-              <mat-icon class="">add</mat-icon>
-            </button>
-          </mat-card-header>
-          <mat-card-content>
-            <mat-list>
-              <mat-list-item *ngFor="let reviewer of proposal.reviewers">
-                <span mat-line>{{ reviewer.name }}</span>
-                <button
-                  mat-icon-button
-                  (click)="onDeleteReviewerClick(reviewer)"
-                >
-                  <mat-icon class="mat-24">delete</mat-icon>
-                </button>
-              </mat-list-item>
-            </mat-list>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card>
-          <mat-card-header>
-            <mat-icon mat-card-avatar>face</mat-icon>
-            <mat-card-title>Studenten</mat-card-title>
-            <mat-card-subtitle>
-              <span
-                *ngIf="
-                  proposal.students.length !== 1 &&
-                  proposal.students.length < proposal.studentsWanted
-                "
-              >{{ proposal.students.length }} studenten van de
-                {{ proposal.studentsWanted }} toegewezen</span
-              >
-              <span
-                *ngIf="
-                  proposal.students.length === 1 &&
-                  proposal.students.length < proposal.studentsWanted
-                "
-              >{{ proposal.students.length }} student van de
-                {{ proposal.studentsWanted }} toegewezen</span
-              >
-              <span *ngIf="proposal.students.length >= proposal.studentsWanted"
-              >Maximaal aantal studenten ({{ proposal.studentsWanted }})
-                bereikt</span
-              >
-            </mat-card-subtitle>
-            <div class="spacer"></div>
-            <button
-              *ngIf="proposal.students.length < proposal.studentsWanted"
-              mat-raised-button
-              class="btn btn-sm btn-outline-primary"
-              aria-label="Add Student"
-              (click)="onAddStudentClick()"
-            >
-              <mat-icon class="">add</mat-icon>
-            </button>
-          </mat-card-header>
-          <mat-card-content>
-            <mat-list>
-              <mat-list-item *ngFor="let student of proposal.students">
-                <span mat-line>{{ student.name }}</span>
-                <button mat-icon-button (click)="onDeleteStudentClick(student)">
-                  <mat-icon class="mat-24">delete</mat-icon>
-                </button>
-              </mat-list-item>
-            </mat-list>
-          </mat-card-content>
-        </mat-card>
+        <p>Overeenkomst in toekomst</p>
       </div>
-    </mat-tab>-->
+
+    </mat-tab>
   </mat-tab-group>
 </div>
 
 
 
-<div>
-<p>naam: {{employee.firstName}}&nbsp;{{employee.lastName}}</p>
-  <p>email: {{employee.email}}</p>
-  <p>rijksregisternummer: {{employee.rrn}}</p>
-</div>
 
 
