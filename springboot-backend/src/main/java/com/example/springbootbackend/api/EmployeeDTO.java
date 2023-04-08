@@ -16,7 +16,7 @@ public class EmployeeDTO {
     private Long id;
     private String firstName;
     private String lastName;
-    private String birthDate;
+    //private String birthDate;
     private String email;
 
     private String rrn;
@@ -26,7 +26,7 @@ public class EmployeeDTO {
         this.firstName = employee.getFirstName();
         this.lastName = employee.getLastName();
         this.email = employee.getEmail();
-        this.birthDate = employee.getBirthDate().format(DateFormatter.FORMATTER);
+        //this.birthDate = employee.getBirthDate().format(DateFormatter.FORMATTER);
         this.rrn= employee.getRrn();
     }
 

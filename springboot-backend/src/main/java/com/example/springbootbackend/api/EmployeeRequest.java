@@ -22,8 +22,8 @@ public class EmployeeRequest {
     @NotEmpty(message = "lastname can not be empty")
     private String lastName;
 
-    @Past(message = "The birth date must be in the past")
-    private String birthDate;
+ /*  @NotEmpty(message = "birthDate can not be empty")
+    private String birthDate;*/
 
     @Email(message = "Invalid email format")
     private String email;

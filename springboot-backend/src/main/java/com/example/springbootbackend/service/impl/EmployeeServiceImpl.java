@@ -39,13 +39,13 @@ public class EmployeeServiceImpl implements EmployeeService {
     public EmployeeDTO createEmployee(EmployeeRequest employeeRequest) {
 
         Optional<Employee> existingEmployee = employeeRepository.findByRrn(employeeRequest.getRrn());
-        if (existingEmployee.isEmpty()) {
+        if (existingEmployee.isPresent()) {
             throw new ValidationException("This employee already exists!");
         }
         Employee newEmployee = Employee.builder()
                 .firstName(employeeRequest.getFirstName())
                 .lastName(employeeRequest.getLastName())
-                .birthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter))
+                //.birthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter))
                 .email(employeeRequest.getEmail())
                 .rrn(employeeRequest.getRrn())
                 .build();
@@ -66,7 +66,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         existingEmployee.setFirstName(employeeRequest.getFirstName());
         existingEmployee.setLastName(employeeRequest.getLastName());
-        existingEmployee.setBirthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter));
+        //existingEmployee.setBirthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter));
         existingEmployee.setEmail(employeeRequest.getEmail());
         existingEmployee.setRrn(employeeRequest.getRrn());
 

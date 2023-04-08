@@ -19,6 +19,7 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './shared/app.shared.module';
 import { AccountComponent } from './auth/account/account.component';
 import { ToastrModule } from 'ngx-toastr';
+import {DatePipe} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { ToastrModule } from 'ngx-toastr';
       developmentMode: !environment.production,
     }),
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

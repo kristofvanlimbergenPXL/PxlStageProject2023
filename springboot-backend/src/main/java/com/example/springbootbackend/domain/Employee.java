@@ -29,8 +29,8 @@ public class Employee {
     @NotEmpty(message = "lastname can not be empty")
     private String lastName;
 
-    @Past(message = "The birth date must be in the past")
-    private LocalDate birthDate;
+/*    @Past(message = "The birth date must be in the past")
+    private LocalDate birthDate;*/
 
     @Email(message = "Invalid email format")
     private String email;

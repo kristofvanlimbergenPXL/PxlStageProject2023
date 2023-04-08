@@ -54,12 +54,9 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
-
-  //TODO
   addEmployee() {
 
-    console.log("hallo");
-
+    this.router.navigate(['/employees/create']);
   }
 
   selectEmployee(employee: Employee) {

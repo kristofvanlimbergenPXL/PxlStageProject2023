@@ -15,7 +15,7 @@ import {ToastrService} from "ngx-toastr";
 export class EmployeeDetailComponent implements OnInit {
 
   employeeId!: number;
-  employee: any={};
+  employee!: Employee;
 
 
   constructor(private route: ActivatedRoute,
@@ -29,13 +29,13 @@ export class EmployeeDetailComponent implements OnInit {
 
     this.employeeId =Number(this.route.snapshot.paramMap.get('id'));
     this.loadEmployee();
-
   }
 
   loadEmployee(): void {
     this.employeeService.getEmployeeById(this.employeeId).subscribe({
       next: (employee) => {
-        this.employee = employee as Employee;
+        this.employee = employee;
+        console.log(this.employee);
       },
       error: (err) => this.toastr.error(err.error.ErrorMessage),
     });

@@ -23,12 +23,16 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ToastrModule } from 'ngx-toastr';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 //This module can be used to import modules that are shared troughout the application
 //Ex. Material Components, Formmodules, ...
 
 @NgModule({
   imports: [
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatSlideToggleModule,
     MatToolbarModule,
     MatIconModule,
@@ -61,6 +65,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   providers: [],
   declarations: [ConfirmDialogComponent],
   exports: [
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatSlideToggleModule,
     MatToolbarModule,
     MatIconModule,

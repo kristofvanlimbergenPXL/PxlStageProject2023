@@ -21,9 +21,9 @@ public class importData implements CommandLineRunner {
 
         employeeRepository.deleteAll();
 
-        Employee employee1 = new Employee(1L, "Jan", "Janssens", LocalDate.of(1980, 1, 1), "jan@gmail.com","19800101123");
-        Employee employee2 = new Employee(2L, "Jef", "Vermeulen", LocalDate.of(1976, 2, 20), "jan@gmail.com","19760220123");
-        Employee employee3 = new Employee(3L, "John", "Doe", LocalDate.of(1960, 8, 10), "jan@gmail.com","19600810123");
+        Employee employee1 = new Employee(1L, "Jan", "Janssens",  "jan@gmail.com","19800101123");
+        Employee employee2 = new Employee(2L, "Jef", "Vermeulen",  "jan@gmail.com","19760220123");
+        Employee employee3 = new Employee(3L, "John", "Doe",  "jan@gmail.com","19600810123");
 
         employeeRepository.saveAll(Arrays.asList(employee1,employee2,employee3));
 
