@@ -4,6 +4,6 @@ export const environment = {
 
   baseUrls: {
     employees: 'http://localhost:8080/api/employee',
-    companies: 'https://localhost:7076/api/Company/',
+    agreements:'http://localhost:8080/api/agreement',
   },
 };

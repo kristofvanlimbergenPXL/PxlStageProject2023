@@ -25,6 +25,15 @@
 
     <mat-tab label="Overeenkomst">
       <div class="cards-container">
+
+        <div>
+          <div *ngFor="let e of employee.agreements">
+            <p>{{e.id}}: {{e.workFunction}}</p>
+
+          </div>
+
+        </div>
+
         <p>Overeenkomst in toekomst</p>
       </div>
     </mat-tab>

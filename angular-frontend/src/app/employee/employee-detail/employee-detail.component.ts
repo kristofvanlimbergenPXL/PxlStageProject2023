@@ -1,12 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {EmployeeService} from "../employee.service";
-import {coerceNumberProperty} from "@angular/cdk/coercion";
-import {MatTableDataSource} from "@angular/material/table";
-import {IConversationForProposal, Proposal, ProposalStatus} from "../../models/proposal";
+
 import {Employee} from "../../models/employee";
 import {ToastrService} from "ngx-toastr";
 import {Observable} from "rxjs/internal/Observable";
+import {EmployeeDetail} from "../../models/employeeDetail";
 
 @Component({
   selector: 'app-employee-detail',
@@ -16,7 +15,7 @@ import {Observable} from "rxjs/internal/Observable";
 export class EmployeeDetailComponent implements OnInit {
 
   employeeId!: number;
-  employee!: Employee;
+  employee!: EmployeeDetail;
 
   constructor(private route: ActivatedRoute,
               private employeeService: EmployeeService,
