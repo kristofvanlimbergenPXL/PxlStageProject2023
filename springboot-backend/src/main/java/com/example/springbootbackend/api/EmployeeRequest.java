@@ -22,9 +22,6 @@ public class EmployeeRequest {
     @NotEmpty(message = "lastname can not be empty")
     private String lastName;
 
- /*  @NotEmpty(message = "birthDate can not be empty")
-    private String birthDate;*/
-
     @Email(message = "Invalid email format")
     private String email;
 
@@ -32,5 +29,8 @@ public class EmployeeRequest {
     @NotEmpty(message = "RRN can not be empty")
     @Length(min = 11, max = 11,message = "Length must be 11 numbers")
     private String rrn;
+
+    @NotEmpty(message = "Phonenumber can not be empty")
+    private String phoneNumber;
 
 }

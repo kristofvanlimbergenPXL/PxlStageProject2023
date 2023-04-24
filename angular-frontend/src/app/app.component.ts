@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   title = 'Employee management';
-
-  navBarOpen: boolean = true;
 }

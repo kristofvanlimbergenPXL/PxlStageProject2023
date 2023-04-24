@@ -11,7 +11,6 @@ import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
@@ -45,9 +44,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee newEmployee = Employee.builder()
                 .firstName(employeeRequest.getFirstName())
                 .lastName(employeeRequest.getLastName())
-                //.birthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter))
                 .email(employeeRequest.getEmail())
                 .rrn(employeeRequest.getRrn())
+                .phoneNumber(employeeRequest.getPhoneNumber())
                 .build();
 
         return new EmployeeDTO(employeeRepository.save(newEmployee));
@@ -66,9 +65,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         existingEmployee.setFirstName(employeeRequest.getFirstName());
         existingEmployee.setLastName(employeeRequest.getLastName());
-        //existingEmployee.setBirthDate(LocalDate.parse(employeeRequest.getBirthDate(),formatter));
         existingEmployee.setEmail(employeeRequest.getEmail());
         existingEmployee.setRrn(employeeRequest.getRrn());
+        existingEmployee.setPhoneNumber(employeeRequest.getPhoneNumber());
 
         return new EmployeeDTO(employeeRepository.save(existingEmployee));
     }

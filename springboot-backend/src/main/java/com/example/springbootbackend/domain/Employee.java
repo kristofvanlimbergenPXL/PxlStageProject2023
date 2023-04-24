@@ -3,12 +3,8 @@ package com.example.springbootbackend.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Past;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
-
-import java.time.LocalDate;
-
 
 
 @Entity
@@ -29,9 +25,6 @@ public class Employee {
     @NotEmpty(message = "lastname can not be empty")
     private String lastName;
 
-/*    @Past(message = "The birth date must be in the past")
-    private LocalDate birthDate;*/
-
     @Email(message = "Invalid email format")
     private String email;
 
@@ -40,5 +33,7 @@ public class Employee {
     @Length(min = 11, max = 11,message = "Length must be 11 numbers")
     private String rrn;
 
+   @NotEmpty(message = "Phonenumber can not be empty")
+    private String phoneNumber;
 
 }

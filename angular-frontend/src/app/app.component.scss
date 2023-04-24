@@ -13,24 +13,6 @@
   padding-top: 64px;
 }
 
-.nav-container {
-  float: left;
-  min-width: 64px;
-  width: 64px;
-  &.expanded {
-    min-width: 180px;
-  }
-}
-
-.menu {
-  background: #666;
-  position: fixed;
-  top: 64px;
-  left: 0;
-  bottom: 0;
-  min-width: inherit;
-  z-index: 800;
-}
 
 .content {
   width: 100%;

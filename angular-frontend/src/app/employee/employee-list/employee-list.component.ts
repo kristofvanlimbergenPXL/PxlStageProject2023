@@ -5,7 +5,6 @@ import {MatSort} from "@angular/material/sort";
 import {MatPaginator} from "@angular/material/paginator";
 import {Router} from "@angular/router";
 import {EmployeeService} from "../employee.service";
-import {Company} from "../../models/company";
 import {MatDialog} from "@angular/material/dialog";
 import {ConfirmDialogComponent} from "../../shared/confirm-dialog/dialog.component";
 import {ToastrService} from "ngx-toastr";

@@ -3,7 +3,6 @@ import {Router} from "@angular/router";
 import {EmployeeService} from "../employee.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Employee} from "../../models/employee";
-import {Student} from "../../models/student";
 import {ToastrService} from "ngx-toastr";
 
 
@@ -33,16 +32,16 @@ export class EmployeeFormComponent implements OnInit {
     if (this.employeeFromParent != null) {
       this.employee = this.employeeFromParent;
       this.setForm(this.employee);
-      this.isVisible=false;
+      this.isVisible = false;
 
       //console.log("from parent");
       //console.log(this.employeeFromParent);
 
     } else {
-      this.employee = new Employee("", "", "", "");
-      this.title='Nieuwe employee toevoegen'
-      this.isVisible=true;
-     // console.log("new employee");
+      this.employee = new Employee("", "", "", "","");
+      this.title = 'Nieuwe employee toevoegen'
+      this.isVisible = true;
+      // console.log("new employee");
     }
 
 
@@ -68,13 +67,13 @@ export class EmployeeFormComponent implements OnInit {
         Validators.required,
         Validators.email,
       ]),
-      /*birthDate: new FormControl('', [
-        Validators.required,
-      ]),*/
       rrn: new FormControl('', [
         Validators.required,
         Validators.minLength(11),
         Validators.maxLength(11)
+      ]),
+      phoneNumber: new FormControl('', [
+        Validators.required,
       ]),
 
 
@@ -111,8 +110,8 @@ export class EmployeeFormComponent implements OnInit {
     employee.firstName = this.employeeForm.value.firstName;
     employee.lastName = this.employeeForm.value.lastName;
     employee.email = this.employeeForm.value.email;
-    //employee.birthDate=this.employeeForm.value.birthDate;
     employee.rrn = this.employeeForm.value.rrn;
+    employee.phoneNumber=this.employeeForm.value.phoneNumber;
   }
 
   setForm(editEmployee: Employee) {
@@ -120,7 +119,8 @@ export class EmployeeFormComponent implements OnInit {
       firstName: editEmployee.firstName,
       lastName: editEmployee.lastName,
       email: editEmployee.email,
-      rrn: editEmployee.rrn
+      rrn: editEmployee.rrn,
+      phoneNumber:editEmployee.phoneNumber
     });
   }
 }

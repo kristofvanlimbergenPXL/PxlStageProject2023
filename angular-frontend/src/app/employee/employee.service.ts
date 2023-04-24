@@ -3,8 +3,6 @@ import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, throwError} from "rxjs";
 import {Employee} from "../models/employee";
 import {environment} from "../../environments/environment";
-import {Proposal} from "../models/proposal";
-import {Student} from "../models/student";
 import {ToastrService} from "ngx-toastr";
 
 @Injectable({

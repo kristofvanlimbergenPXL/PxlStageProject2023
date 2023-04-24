@@ -21,12 +21,11 @@ public class importData implements CommandLineRunner {
 
         employeeRepository.deleteAll();
 
-        Employee employee1 = new Employee(1L, "Jan", "Janssens",  "jan@gmail.com","19800101123");
-        Employee employee2 = new Employee(2L, "Jef", "Vermeulen",  "jan@gmail.com","19760220123");
-        Employee employee3 = new Employee(3L, "John", "Doe",  "jan@gmail.com","19600810123");
+        Employee employee1 = new Employee(1L, "Jan", "Janssens",  "jan@gmail.com","19800101123","0494/123456");
+        Employee employee2 = new Employee(2L, "Jef", "Vermeulen",  "jan@gmail.com","19760220123","0475/987654");
+        Employee employee3 = new Employee(3L, "John", "Doe",  "jan@gmail.com","19600810123","0494/561234");
 
         employeeRepository.saveAll(Arrays.asList(employee1,employee2,employee3));
-
 
     }
 }
