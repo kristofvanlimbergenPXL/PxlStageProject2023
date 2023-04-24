@@ -2,7 +2,9 @@ package com.example.springbootbackend.rest;
 
 
 import com.example.springbootbackend.api.EmployeeDTO;
+import com.example.springbootbackend.api.EmployeeDetailDTO;
 import com.example.springbootbackend.api.EmployeeRequest;
+import com.example.springbootbackend.domain.Employee;
 import com.example.springbootbackend.service.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +28,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<EmployeeDTO> getEmployeeById(@PathVariable Long id){
+    public ResponseEntity<EmployeeDetailDTO> getEmployeeById(@PathVariable Long id){
 
         return new ResponseEntity<>(employeeService.getEmployee(id),HttpStatus.OK);
     }
@@ -47,6 +49,5 @@ public class EmployeeController {
         employeeService.deleteEmployee(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
 
 }

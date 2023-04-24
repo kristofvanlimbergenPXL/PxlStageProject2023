@@ -6,6 +6,9 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity
 @NoArgsConstructor
@@ -35,5 +38,9 @@ public class Employee {
 
    @NotEmpty(message = "Phonenumber can not be empty")
     private String phoneNumber;
+
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+    private List<Agreement> agreements = new ArrayList<>();
+
 
 }

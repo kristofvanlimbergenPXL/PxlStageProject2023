@@ -13,7 +13,8 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-public class EmployeeDTO {
+public class EmployeeDetailDTO {
+
 
     private Long id;
     private String firstName;
@@ -22,13 +23,19 @@ public class EmployeeDTO {
     private String rrn;
     private String phoneNumber;
 
-    public EmployeeDTO(Employee employee) {
+    private List<AgreementDTO> agreements;
+
+    public EmployeeDetailDTO(Employee employee) {
         this.id = employee.getId();
         this.firstName = employee.getFirstName();
         this.lastName = employee.getLastName();
         this.email = employee.getEmail();
         this.rrn = employee.getRrn();
         this.phoneNumber =employee.getPhoneNumber();
+        this.agreements=employee.getAgreements().stream().map(AgreementDTO::new).collect(Collectors.toList());
     }
+
+
+
 
 }

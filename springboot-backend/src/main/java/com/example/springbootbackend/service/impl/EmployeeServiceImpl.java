@@ -2,6 +2,7 @@ package com.example.springbootbackend.service.impl;
 
 
 import com.example.springbootbackend.api.EmployeeDTO;
+import com.example.springbootbackend.api.EmployeeDetailDTO;
 import com.example.springbootbackend.api.EmployeeRequest;
 import com.example.springbootbackend.domain.Employee;
 import com.example.springbootbackend.exception.EmployeeNotFoundException;
@@ -30,8 +31,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public EmployeeDTO getEmployee(Long id) {
-        return employeeRepository.findById(id).map(EmployeeDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
+    public EmployeeDetailDTO getEmployee(Long id) {
+        return employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
     }
 
     @Override
@@ -71,6 +72,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return new EmployeeDTO(employeeRepository.save(existingEmployee));
     }
+
 
 
 }

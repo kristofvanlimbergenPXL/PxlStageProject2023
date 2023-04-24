@@ -1,5 +1,6 @@
 package com.example.springbootbackend.rest.advice;
 
+import com.example.springbootbackend.exception.AgreementNotFoundException;
 import com.example.springbootbackend.exception.EmployeeNotFoundException;
 import com.example.springbootbackend.exception.ErrorResponse;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -23,7 +24,7 @@ import java.util.List;
 public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler {
 
 
-    @ExceptionHandler({EmployeeNotFoundException.class})
+    @ExceptionHandler({EmployeeNotFoundException.class, AgreementNotFoundException.class})
     public ResponseEntity<Object> handleResourceNotFoundException(RuntimeException ex) {
         ErrorResponse error = new ErrorResponse(Collections.singletonList(ex.getMessage()));
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);

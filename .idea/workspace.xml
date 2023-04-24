@@ -5,105 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad47a20-2d7f-4f49-909d-835471a8c577" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/account/account.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/account/account.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/account/account.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/account/account.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/auth.actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/auth.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/auth.state.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/login/login.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/auth/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/dashboard/dash-board/dash-board.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/dashboard/dash-board/dash-board.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/dashboard/dash-board/dash-board.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/dashboard/dashboard.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-list/employee-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-list/employee-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-list/employee-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/employee.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/models/employee.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/googleFile.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/googleSheet.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/googleUser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/reviewer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/student.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/studentCsv.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-menu/nav-menu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-menu/nav-menu.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-menu/nav-menu.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-menu/nav-menu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-menu/sync.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/navigation/nav-toolbar/nav-toolbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-detail/reviewer-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-form/reviewer-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-form/reviewer-form.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-form/reviewer-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-form/reviewer-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-list/reviewer-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-list/reviewer-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-list/reviewer-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer-list/reviewer-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/reviewers/reviewer.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/export.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/import.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings-overview/settings.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings-overview/settings.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings-overview/settings.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings-overview/settings.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings.actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/settings/settings.state.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/drag-drop-student-csv/drag-drop-student-csv.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-form/student-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-form/student-form.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-form/student-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-form/student-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-list/student-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-list/student-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-list/student-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student-list/student-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/students/student.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/Favicon_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/Goedgekeurd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/InReview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/Infeedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/InternWise_horizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/InternWise_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/afgekeurd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/bevestigd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/google-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/assets/reviewOntvangen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/api/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/api/EmployeeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/api/EmployeeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/api/EmployeeRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/dataseeder/importData.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/dataseeder/importData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/rest/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/rest/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/rest/advice/ApplicationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/rest/advice/ApplicationExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/impl/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +22,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/krist/Desktop/Pxl/StageProject/PxlStageProject2023&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;28e202013b6f4ddb50d2565ac9017dcd&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\krist\\Desktop\\Pxl\\StageProject\\PxlStageProject2023\\angular-frontend\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/krist/Desktop/Pxl/Java_expert/Examen_map/Meest_nuttige_oef/java_examen_zit1_orders",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "28e202013b6f4ddb50d2565ac9017dcd",
+    "ts.external.directory.path": "C:\\Users\\krist\\Desktop\\Pxl\\StageProject\\PxlStageProject2023\\angular-frontend\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023\springboot-backend\src\main\java\com\example\springbootbackend" />
@@ -216,28 +133,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/impl/EmployeeServiceImpl.java</url>
-          <line>61</line>
-          <properties class="com.example.springbootbackend.service.impl.EmployeeServiceImpl" method="updateEmployee">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot-backend/src/main/java/com/example/springbootbackend/service/impl/EmployeeServiceImpl.java</url>
-          <line>63</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
