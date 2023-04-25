@@ -9,17 +9,24 @@
       </button>
     </span>
     <span class="col-8 my-auto mx-auto">
-      {{employee.firstName}}&nbsp;{{employee.lastName}}
+<!--      {{employee.employee.firstName}}&nbsp;{{employee.employee.lastName}}-->
     </span>
   </div>
   <mat-tab-group class="tab-container ms-2 me-4">
     <mat-tab label="Algemeen">
-      <app-employee-form [employeeFromParent]="employee"></app-employee-form>
+     <app-employee-form [employeeFromParent]="employeeAddress.employee"></app-employee-form>
     </mat-tab>
 
     <mat-tab label="Adres">
       <div class="cards-container">
-        <p>Adres in toekomst</p>
+
+        <div>
+          <p>Adres in toekomst</p>
+          <p>{{employeeAddress.address.street}}&nbsp;&nbsp;{{employeeAddress.address.houseNumber}}</p>
+          <p>{{employeeAddress.address.zipCode}}&nbsp;&nbsp;{{employeeAddress.address.city}}</p>
+          <p>{{employeeAddress.address.country}}</p>
+        </div>
+
       </div>
     </mat-tab>
 
@@ -39,9 +46,9 @@
             </button>
           </mat-card-header>
           <mat-card-content>
-            <table *ngFor="let e of employee.agreements">
+          <table *ngFor="let e of employeeAddress.employee.agreements">
               <tr (click)="onSelect(e)">
-                <td>{{e.id}}:&nbsp; {{e.workFunction}}</td>
+              <td>{{e.id}}:&nbsp; {{e.workFunction}}</td>
               </tr>
             </table>
           </mat-card-content>
@@ -50,7 +57,7 @@
         <mat-card>
           <mat-card-header></mat-card-header>
           <mat-card-content >
-            <app-agreement-form  [agreementFromParent]="agreement"  ></app-agreement-form>
+            <app-agreement-form [agreementFromParent]="agreement" ></app-agreement-form>
           </mat-card-content>
         </mat-card>
       </div>

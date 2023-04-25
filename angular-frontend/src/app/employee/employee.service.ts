@@ -5,6 +5,7 @@ import {Employee} from "../models/employee";
 import {environment} from "../../environments/environment";
 import {ToastrService} from "ngx-toastr";
 import {EmployeeDetail} from "../models/employeeDetail";
+import {EmployeeAddress} from "../models/EmployeeAddress";
 
 @Injectable({
   providedIn: 'root'
@@ -21,8 +22,8 @@ export class EmployeeService {
     return this.httpClient.get<Employee[]>(this.baseUrl);
   }
 
-  getEmployeeById(id:number):Observable<EmployeeDetail>{
-    return this.httpClient.get<EmployeeDetail>(`${this.baseUrl}/${id}`);
+  getEmployeeById(id:number):Observable<EmployeeAddress>{
+    return this.httpClient.get<EmployeeAddress>(`${this.baseUrl}/${id}`);
   }
 
   deleteEmployee(id: any):Observable<unknown>{

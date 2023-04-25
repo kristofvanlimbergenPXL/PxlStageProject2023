@@ -38,7 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         EmployeeDetailDTO employee = employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
         ResponseEntity<AddressDTO> responseEntity = restTemplate
-                .getForEntity(BASE_URL + id,
+                .getForEntity("http://localhost:8081/api/address/" + id,
                         AddressDTO.class);
         AddressDTO address = responseEntity.getBody();
 

@@ -5,6 +5,7 @@ import {ToastrService} from "ngx-toastr";
 import {EmployeeDetail} from "../../models/employeeDetail";
 import {Agreement} from "../../models/agreement";
 import {AgreementService} from "../../agreement/agreement.service";
+import {EmployeeAddress} from "../../models/EmployeeAddress";
 
 @Component({
   selector: 'app-employee-detail',
@@ -16,7 +17,7 @@ import {AgreementService} from "../../agreement/agreement.service";
 export class EmployeeDetailComponent implements OnInit {
 
   employeeId!: number;
-  employee!: EmployeeDetail;
+  employeeAddress!: EmployeeAddress;
   agreement!: Agreement | null;
 
   constructor(private route: ActivatedRoute,
@@ -37,9 +38,10 @@ export class EmployeeDetailComponent implements OnInit {
   loadEmployee(): void {
     this.employeeService.getEmployeeById(this.employeeId).subscribe({
       next: (employee) => {
-        this.employee = employee;
-        console.log(this.employee);
-        this.agreement=this.employee.agreements[0];
+        this.employeeAddress = employee;
+        console.log("hallo");
+        console.log(this.employeeAddress);
+        this.agreement=this.employeeAddress.employee.agreements[0];
       },
       error: (err) => this.toastr.error(err.error.ErrorMessage),
     });
