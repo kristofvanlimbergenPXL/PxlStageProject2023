@@ -29,8 +29,4 @@ public class Address {
     @NotNull(message = "EmployeeId can not be empty")
     private Long employeeId;
 
-
-
-
-
 }

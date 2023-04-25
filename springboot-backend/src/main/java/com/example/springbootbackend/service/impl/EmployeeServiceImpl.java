@@ -1,16 +1,17 @@
 package com.example.springbootbackend.service.impl;
 
 
-import com.example.springbootbackend.api.EmployeeDTO;
-import com.example.springbootbackend.api.EmployeeDetailDTO;
-import com.example.springbootbackend.api.EmployeeRequest;
+import com.example.springbootbackend.api.*;
+import com.example.springbootbackend.domain.Address;
 import com.example.springbootbackend.domain.Employee;
 import com.example.springbootbackend.exception.EmployeeNotFoundException;
 import com.example.springbootbackend.repository.EmployeeRepository;
 import com.example.springbootbackend.service.EmployeeService;
 import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -21,7 +22,9 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 
+    private static final String BASE_URL = "http://localhost:8081/api/address/";
     private final EmployeeRepository employeeRepository;
+    private final RestTemplate restTemplate;
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
@@ -31,9 +34,17 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public EmployeeDetailDTO getEmployee(Long id) {
-        return employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
+    public EmployeeAddresDTO getEmployee(Long id) {
+
+        EmployeeDetailDTO employee = employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
+        ResponseEntity<AddressDTO> responseEntity = restTemplate
+                .getForEntity(BASE_URL + id,
+                        AddressDTO.class);
+        AddressDTO address = responseEntity.getBody();
+
+        return new EmployeeAddresDTO(employee, address);
     }
+
 
     @Override
     public EmployeeDTO createEmployee(EmployeeRequest employeeRequest) {
@@ -72,7 +83,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return new EmployeeDTO(employeeRepository.save(existingEmployee));
     }
-
 
 
 }

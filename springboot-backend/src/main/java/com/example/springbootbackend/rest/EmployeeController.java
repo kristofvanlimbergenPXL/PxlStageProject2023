@@ -1,6 +1,7 @@
 package com.example.springbootbackend.rest;
 
 
+import com.example.springbootbackend.api.EmployeeAddresDTO;
 import com.example.springbootbackend.api.EmployeeDTO;
 import com.example.springbootbackend.api.EmployeeDetailDTO;
 import com.example.springbootbackend.api.EmployeeRequest;
@@ -13,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequiredArgsConstructor
@@ -28,20 +30,21 @@ public class EmployeeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<EmployeeDetailDTO> getEmployeeById(@PathVariable Long id){
+    public ResponseEntity<EmployeeAddresDTO> getEmployeeById(@PathVariable Long id) {
 
-        return new ResponseEntity<>(employeeService.getEmployee(id),HttpStatus.OK);
+        return new ResponseEntity<>(employeeService.getEmployee(id), HttpStatus.OK);
     }
 
+
     @PostMapping
-    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeRequest employeeRequest){
-        return new ResponseEntity<>(employeeService.createEmployee(employeeRequest),HttpStatus.CREATED);
+    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeRequest employeeRequest) {
+        return new ResponseEntity<>(employeeService.createEmployee(employeeRequest), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id,@Valid @RequestBody EmployeeRequest employeeRequest){
+    public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeRequest employeeRequest) {
 
-        return new ResponseEntity<>(employeeService.updateEmployee(id,employeeRequest),HttpStatus.OK);
+        return new ResponseEntity<>(employeeService.updateEmployee(id, employeeRequest), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
