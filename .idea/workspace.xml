@@ -5,37 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad47a20-2d7f-4f49-909d-835471a8c577" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adress-service/src/main/java/com/example/adressservice/exception/AddressNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adress-service/src/main/java/com/example/adressservice/exception/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-detail/employee-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee-form/employee-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/employee/employee.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/models/agreement.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/models/agreement.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/add-to-collection-dialog/add-to-collection-dialog.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/conversation-detail/conversation-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/conversation-detail/conversation-detail.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/conversation-detail/conversation-detail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/conversation-detail/conversation-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-detail/proposal-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-detail/proposal-detail.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-detail/proposal-detail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-detail/proposal-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-list/proposal-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-list/proposal-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-list/proposal-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal-list/proposal-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/proposal.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/proposal/send-to-promotor-dialog/send-to-promotor-dialog.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/favicon.ico" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,33 +87,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/krist/Desktop/Pxl/Java_expert/Examen_map/Meest_nuttige_oef/java_examen_zit1_orders&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;28e202013b6f4ddb50d2565ac9017dcd&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\krist\\Desktop\\Pxl\\StageProject\\PxlStageProject2023\\angular-frontend\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/krist/Desktop/Pxl/StageProject/PxlStageProject2023/adress-service/src/main/java/com/example/adressservice/exception",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "28e202013b6f4ddb50d2565ac9017dcd",
+    "ts.external.directory.path": "C:\\Users\\krist\\Desktop\\Pxl\\StageProject\\PxlStageProject2023\\angular-frontend\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023\adress-service\src\main\java\com\example\adressservice\exception" />
       <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023\springboot-backend\src\main\java\com\example\springbootbackend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023" />
       <recent name="C:\Users\krist\Desktop\Pxl\StageProject\PxlStageProject2023\angular-frontend\src\app\agreement" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.adressservice.rest.advice" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootBackendApplication">
+  <component name="RunManager" selected="Spring Boot.AdressServiceApplication">
     <configuration name="Tests (internshiptool)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/angular-frontend/karma.conf.js" />
       <karma-package-dir value="$PROJECT_DIR$/angular-frontend/node_modules/@angular/cli" />
@@ -111,6 +133,13 @@
     </configuration>
     <configuration name="Angular Application (angular-frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
+    </configuration>
+    <configuration name="AdressServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="adress-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.adressservice.AdressServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpringbootBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-backend" />

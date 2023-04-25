@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PxlStageProject2023.iml" filepath="$PROJECT_DIR$/.idea/PxlStageProject2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adress-service/adress-service.iml" filepath="$PROJECT_DIR$/adress-service/adress-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-backend/springboot-backend.iml" filepath="$PROJECT_DIR$/springboot-backend/springboot-backend.iml" />
     </modules>
   </component>

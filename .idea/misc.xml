@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/../adress-service/adress-service/pom.xml" />
+        <option value="$PROJECT_DIR$/adress-service/pom.xml" />
       </list>
     </option>
   </component>
