@@ -5,6 +5,8 @@ import {SharedModule} from '../shared/app.shared.module';
 import {EmployeeListComponent} from "./employee-list/employee-list.component";
 import {EmployeeDetailComponent} from './employee-detail/employee-detail.component';
 import {EmployeeFormComponent} from './employee-form/employee-form.component';
+import {AgreementModule} from "../agreement/agreement.module";
+
 
 
 const routes: Routes = [
@@ -19,7 +21,7 @@ const routes: Routes = [
     EmployeeDetailComponent,
     EmployeeFormComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, SharedModule, RouterModule.forChild(routes), AgreementModule],
   providers: [],
   exports: [],
 })

@@ -34,17 +34,11 @@ export class EmployeeFormComponent implements OnInit {
       this.setForm(this.employee);
       this.isVisible = false;
 
-      //console.log("from parent");
-      //console.log(this.employeeFromParent);
-
     } else {
-      this.employee = new Employee("", "", "", "","");
+      this.employee = new Employee("", "", "", "", "");
       this.title = 'Nieuwe employee toevoegen'
       this.isVisible = true;
-      // console.log("new employee");
     }
-
-
   }
 
 
@@ -111,7 +105,7 @@ export class EmployeeFormComponent implements OnInit {
     employee.lastName = this.employeeForm.value.lastName;
     employee.email = this.employeeForm.value.email;
     employee.rrn = this.employeeForm.value.rrn;
-    employee.phoneNumber=this.employeeForm.value.phoneNumber;
+    employee.phoneNumber = this.employeeForm.value.phoneNumber;
   }
 
   setForm(editEmployee: Employee) {
@@ -120,7 +114,7 @@ export class EmployeeFormComponent implements OnInit {
       lastName: editEmployee.lastName,
       email: editEmployee.email,
       rrn: editEmployee.rrn,
-      phoneNumber:editEmployee.phoneNumber
+      phoneNumber: editEmployee.phoneNumber
     });
   }
 }

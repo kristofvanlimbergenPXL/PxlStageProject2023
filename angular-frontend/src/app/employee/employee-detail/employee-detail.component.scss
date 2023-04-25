@@ -7,7 +7,7 @@
 }
 
 .tab-content {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .tab-container {
@@ -20,11 +20,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-height: available;
 }
-
 mat-card {
   flex: 0 1 calc(50% - 0.5em);
-  margin-bottom: 2.5em;
+  margin-bottom: 0em;
 }
 
 mat-icon.mat-card-avatar {
@@ -37,13 +37,6 @@ mat-icon.mat-card-avatar {
   flex: 1;
 }
 
-.mail-buttons button {
-  margin-right: 10px;
-}
-
-.approval-buttons button {
-  margin-right: 10px;
-}
 
 .button-container {
   flex-shrink: 0;
@@ -54,40 +47,10 @@ mat-icon.mat-card-avatar {
   flex-direction: column;
 }
 
-.form-class {
-  flex: 1 0 auto;
-}
-
-.warning {
-  color: orangered;
-  font-size: 0.75rem;
-  font-weight: 400;
-  width: 40rem;
-  text-align: right;
-}
-
 .no-scrollbar {
   overflow: hidden;
 }
 
-// Check if pdf button is deleted if this is still needed here.
-.disable-background {
-  background: #bababa50;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
-}
-
-.spinner {
-  position: fixed;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .mat-raised-button {
   color: #030203;
@@ -95,4 +58,8 @@ mat-icon.mat-card-avatar {
 
 .mat-raised-button:hover {
   background-color: rgb(88, 165, 24, 0.4);
+}
+
+table td{
+  padding: 10px;
 }
