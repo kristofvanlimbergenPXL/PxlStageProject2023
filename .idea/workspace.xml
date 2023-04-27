@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad47a20-2d7f-4f49-909d-835471a8c577" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_10_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_3_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_3_0_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adress-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adress-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adress-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adress-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +93,7 @@
       <recent name="com.example.adressservice.rest.advice" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootBackendApplication">
+  <component name="RunManager" selected="Spring Boot.AdressServiceApplication">
     <configuration name="Tests (internshiptool)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/angular-frontend/karma.conf.js" />
       <karma-package-dir value="$PROJECT_DIR$/angular-frontend/node_modules/@angular/cli" />
