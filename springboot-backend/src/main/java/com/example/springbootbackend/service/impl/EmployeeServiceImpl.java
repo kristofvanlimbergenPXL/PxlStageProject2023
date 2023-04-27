@@ -5,6 +5,7 @@ import com.example.springbootbackend.api.*;
 import com.example.springbootbackend.domain.Address;
 import com.example.springbootbackend.domain.Employee;
 import com.example.springbootbackend.exception.EmployeeNotFoundException;
+import com.example.springbootbackend.proxy.EmployeeAddressProxy;
 import com.example.springbootbackend.repository.EmployeeRepository;
 import com.example.springbootbackend.service.EmployeeService;
 import jakarta.validation.ValidationException;
@@ -25,6 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private static final String BASE_URL = "http://localhost:8081/api/address/";
     private final EmployeeRepository employeeRepository;
     private final RestTemplate restTemplate;
+    private final EmployeeAddressProxy employeeAddressProxy;
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
@@ -41,6 +43,15 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .getForEntity("http://localhost:8081/api/address/" + id,
                         AddressDTO.class);
         AddressDTO address = responseEntity.getBody();
+        return new EmployeeAddresDTO(employee, address);
+    }
+
+    //met feign proxy
+    @Override
+    public EmployeeAddresDTO getEmployeeFeign(Long id) {
+
+        EmployeeDetailDTO employee = employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
+        AddressDTO address = employeeAddressProxy.getAddressByEmployeeId(id);
 
         return new EmployeeAddresDTO(employee, address);
     }

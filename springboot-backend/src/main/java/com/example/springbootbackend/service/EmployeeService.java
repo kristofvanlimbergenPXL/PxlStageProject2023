@@ -14,6 +14,9 @@ public interface EmployeeService {
 
     EmployeeAddresDTO getEmployee(Long id);
 
+    //met feign proxy
+    EmployeeAddresDTO getEmployeeFeign(Long id);
+
     EmployeeDTO createEmployee(EmployeeRequest employeeRequest);
 
     void deleteEmployee(Long id);

@@ -6,6 +6,7 @@ import com.example.springbootbackend.api.EmployeeDTO;
 import com.example.springbootbackend.api.EmployeeDetailDTO;
 import com.example.springbootbackend.api.EmployeeRequest;
 import com.example.springbootbackend.domain.Employee;
+import com.example.springbootbackend.proxy.EmployeeAddressProxy;
 import com.example.springbootbackend.service.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,7 @@ public class EmployeeController {
     private final EmployeeService employeeService;
 
 
+
     @GetMapping
     public ResponseEntity<List<EmployeeDTO>> getAll() {
         return new ResponseEntity<>(employeeService.getAll(), HttpStatus.OK);
@@ -34,6 +36,13 @@ public class EmployeeController {
 
         return new ResponseEntity<>(employeeService.getEmployee(id), HttpStatus.OK);
     }
+    //met feign
+    @GetMapping("/{id}/feign")
+    public ResponseEntity<EmployeeAddresDTO> getEmployeeByIdFeign(@PathVariable Long id) {
+
+        return new ResponseEntity<>(employeeService.getEmployeeFeign(id), HttpStatus.OK);
+    }
+
 
     @PostMapping
     public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeRequest employeeRequest) {
