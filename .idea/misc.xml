@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/../adress-service/adress-service/pom.xml" />
         <option value="$PROJECT_DIR$/adress-service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-backend/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
