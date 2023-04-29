@@ -40,7 +40,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         EmployeeDetailDTO employee = employeeRepository.findById(id).map(EmployeeDetailDTO::new).orElseThrow(() -> new EmployeeNotFoundException(id));
         ResponseEntity<AddressDTO> responseEntity = restTemplate
-                .getForEntity("http://localhost:8081/api/address/" + id,
+                //.getForEntity("http://localhost:8081/api/address/" + id,   --> zonder docker
+                //       AddressDTO.class);
+                .getForEntity("http://address-service:8081/api/address/" + id,
                         AddressDTO.class);
         AddressDTO address = responseEntity.getBody();
         return new EmployeeAddresDTO(employee, address);
