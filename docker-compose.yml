@@ -24,8 +24,8 @@ services:
     environment:
       - OTEL_SERVICE_NAME=address-service
       - OTEL_METRICS_EXPORTER=none
-      - OTEL_TRACES_EXPORTER=zipkin
-      - OTEL_EXPORTER_ZIPKIN_ENDPOINT=http://zipkin:9411/api/v2/spans
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otlp-collector:4317
 
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/pocdb?allowPublicKeyRetrieval=true&useSSL=false
       - SPRING_DATASOURCE_USERNAME=root
@@ -50,8 +50,8 @@ services:
     environment:
       - OTEL_SERVICE_NAME=employee-service
       - OTEL_METRICS_EXPORTER=none
-      - OTEL_TRACES_EXPORTER=zipkin
-      - OTEL_EXPORTER_ZIPKIN_ENDPOINT=http://zipkin:9411/api/v2/spans
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otlp-collector:4317
 
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/pocdb?allowPublicKeyRetrieval=true&useSSL=false
       - SPRING_DATASOURCE_USERNAME=root
@@ -80,8 +80,8 @@ services:
     environment:
       - OTEL_SERVICE_NAME=api-gateway
       - OTEL_METRICS_EXPORTER=none
-      - OTEL_TRACES_EXPORTER=zipkin
-      - OTEL_EXPORTER_ZIPKIN_ENDPOINT=http://zipkin:9411/api/v2/spans
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otlp-collector:4317
 
       - EUREKA.CLIENT.SERVICEURL.DEFAULTZONE=http://eureka-server:8761/eureka
 
@@ -96,7 +96,7 @@ services:
     networks:
       - my-network
 
-  zipkin:
+  zipkin-collector:
     image: openzipkin/zipkin:latest
     ports:
       - "9411:9411"
@@ -116,6 +116,18 @@ services:
       - my-network
     restart: always #Restart if there is a problem starting up
 
+  otlp-collector:
+    image: otel/opentelemetry-collector:latest
+    container_name: otlp-collector
+    ports:
+      - "4317:4317"
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    depends_on:
+      - zipkin-collector
+    networks:
+      - my-network
 
 volumes:
   db:
