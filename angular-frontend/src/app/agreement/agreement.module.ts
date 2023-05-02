@@ -7,7 +7,7 @@ import {AgreementFormComponent} from "./agreement-form/agreement-form.component"
 
 
 const routes: Routes = [
-  {path:'create',component:AgreementFormComponent},
+  {path:'createAgreement',component:AgreementFormComponent},
 ];
 
 @NgModule({

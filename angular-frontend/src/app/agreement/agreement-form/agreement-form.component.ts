@@ -4,8 +4,7 @@ import {Agreement} from "../../models/agreement";
 import {Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {AgreementService} from "../agreement.service";
-import {Employee} from "../../models/employee";
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
+
 
 @Component({
   selector: 'app-agreement-form',

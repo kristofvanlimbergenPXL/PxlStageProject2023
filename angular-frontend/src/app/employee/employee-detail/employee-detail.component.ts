@@ -6,6 +6,7 @@ import {EmployeeDetail} from "../../models/employeeDetail";
 import {Agreement} from "../../models/agreement";
 import {AgreementService} from "../../agreement/agreement.service";
 import {EmployeeAddress} from "../../models/EmployeeAddress";
+import {map} from "rxjs";
 
 @Component({
   selector: 'app-employee-detail',
@@ -36,11 +37,13 @@ export class EmployeeDetailComponent implements OnInit {
   }
 
   loadEmployee(): void {
-    this.employeeService.getEmployeeById(this.employeeId).subscribe({
+    this.employeeService.getEmployeeById(this.employeeId).pipe(map(x=>{
+      return {...x}
+    })).subscribe({
       next: (employee) => {
         this.employeeAddress = employee;
-        console.log("hallo");
-        console.log(this.employeeAddress);
+        //console.log("hallo");
+        //console.log(this.employeeAddress.employee.agreements[0]);
         this.agreement=this.employeeAddress.employee.agreements[0];
       },
       error: (err) => this.toastr.error(err.error.ErrorMessage),
