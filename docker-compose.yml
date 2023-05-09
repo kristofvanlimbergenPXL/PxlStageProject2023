@@ -98,6 +98,7 @@ services:
 
   zipkin:
     image: openzipkin/zipkin:latest
+    container_name: Zipkin
     ports:
       - "9411:9411"
     networks:
