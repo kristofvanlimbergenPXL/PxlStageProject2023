@@ -98,6 +98,7 @@ services:
 
   zipkin-collector:
     image: openzipkin/zipkin:latest
+    container_name: zipkin-collector
     ports:
       - "9411:9411"
     networks:
