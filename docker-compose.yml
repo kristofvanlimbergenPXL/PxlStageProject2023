@@ -93,6 +93,17 @@ services:
       - my-network
     restart: always #Restart if there is a problem starting up
 
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+    networks:
+      - my-network
+    restart: always #Restart if there is a problem starting up
 
 volumes:
   db:
